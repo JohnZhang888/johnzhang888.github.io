@@ -1,14 +1,10 @@
-@font-face {
-    font-family: Source;
-    src: url("fonts/Source.woff2")
-}
 body{background-color: #fbfdf8; margin: 30px 15% 30px 15%;}
 div{margin: 20px 0px 20px 0px; padding: 8px 30px 8px 30px; background-color: #eef5ee; border-radius: 8px; border: solid; border-width:2px; border-color: #dce5dc;}
-p, h1, h2, li, button, button:hover{font-family: 'Roboto','Source','Noto Sans','HarmonyOS Sans SC','Microsoft YaHei','sans-serif';}
+p, h1, h2, li, button, button:hover{font-family: 'Roboto','sans-serif';}
 p, h1, h2, li{color: #002112}
 button, button:hover{color:#ffffff}
 p, button, button:hover{font-size: 16px;}
-h1{font-size: 36px; font-weight: 300;}
+h1{font-size: 36px; font-weight: 400;}
 h2{font-size: 24px; font-weight: 600;}
 a{text-decoration:none;}
 a{color: #006c46;}
