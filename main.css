@@ -1,7 +1,24 @@
-body{background-color: #eaf1ff; margin: 30px 30px 30px 30px;}
-p{font-family: 'Noto Sans','HarmonyOS Sans SC','Microsoft YaHei','sans-serif'; font-size: 16px;}
-h1{font-family: 'Noto Serif','Times New Roman','华文中宋','serif'; font-size: 36px;}
-h2{font-family: 'Noto Sans','HarmonyOS Sans SC','Microsoft YaHei','sans-serif'; font-size: 24px;}
+@font-face {
+    font-family: Source;
+    src: url("fonts/Source.woff2")
+}
+body{background-color: #fbfdf8; margin: 30px 15% 30px 15%;}
+div{margin: 20px 0px 20px 0px; padding: 8px 30px 8px 30px; background-color: #eef5ee; border-radius: 8px; border: solid; border-width:2px; border-color: #dce5dc;}
+p, h1, h2, li, button, button:hover{font-family: 'Roboto','Source','Noto Sans','HarmonyOS Sans SC','Microsoft YaHei','sans-serif';}
+p, h1, h2, li{color: #002112}
+button, button:hover{color:#ffffff}
+p, button, button:hover{font-size: 16px;}
+h1{font-size: 36px; font-weight: 300;}
+h2{font-size: 24px; font-weight: 600;}
 a{text-decoration:none;}
-li{font-family: 'Noto Sans','HarmonyOS Sans SC','Microsoft YaHei','sans-serif'; font-size: 16px;}
-a{color: #0060aa;}
+a{color: #006c46;}
+a:hover{color: #005234}
+button, button:hover
+{
+    padding: 6px 14px 6px 14px;
+    border: none;
+    border-radius: 32px;
+}
+button{background-color: #006c46;}
+button:hover{background-color: #005234;}
+.infor{font-size: 14px; color: #7b837c;}
