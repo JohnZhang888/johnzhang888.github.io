@@ -9,6 +9,7 @@ h2{font-size: 24px; font-weight: 600;}
 a{text-decoration:none;}
 a{color: #006c46;}
 a:hover{color: #005234}
+a:active{color: #008859;}
 button, button:hover
 {
     padding: 6px 14px 6px 14px;
@@ -17,4 +18,5 @@ button, button:hover
 }
 button{background-color: #006c46;}
 button:hover{background-color: #005234;}
+button:active{background-color: #008859;}
 .infor{font-size: 14px; color: #7b837c;}
