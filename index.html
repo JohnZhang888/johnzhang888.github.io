@@ -1,30 +1,80 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<html lang="zh-CN" data-bs-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张永康</title>
-    <style>
-        @import"main.css";
-        
-    </style>
-    <link href="https://fonts.googlefonts.cn/css?family=Roboto|Roboto+Slab" rel="stylesheet">
-<body>
-    <h1>John Zhang&thinsp;的小网站</h1>
-    <div>
-        <p>欢迎！开始探索本网站！</p> 
-        <p><a href="passage.html"><button>文章</button></a>&emsp;&emsp;&emsp;&emsp;<a href="about.html">关于</a></p>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="bootstrap5/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logo/shortcut.png"></link>
+    <title>John 的网站</title>
+</head>
+
+<body class="bg-body-secondary">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="btn btn-link" href="about/index.html">关于</a>
+            <a href="index.html" class="navbar-brand logo"><b>John</a></b>
+            <a href="index-en.html"class="btn btn-link">English</a>
+        </div>
+    </nav>
+    <br />
+
+    <div class="container">
+        <br/>
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <h1 class="card-title">欢迎来访 John 的网站！</h1>
+                <p class="card-text">尚未确定的，富含哲理的，高大上的，<del>不知所云的</del> Slogan。</p>
+            </div>
+        </div>
+        <br />
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title text-primary"><i class="bi bi-stars"></i> <strong>最新文章</strong></h6>
+                <h2>网站重建记</h2>
+                <p class="card-text">记录我重新搭建本网站的过程。</p>
+                <a class="btn btn-primary" href="kind1/rebuildWebsite.html">阅读</a>
+            </div>
+        </div>
+        <br />
+        <div class="row gy-2 gx-2">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">随写随记</h2>
+                        <p class="card-text">随便写点东西，什么都写。</p>
+                        <a class="btn btn-outline-secondary btn-sm" href="kind1/index.html">浏览</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">正经文摘</h2>
+                        <p class="card-text">我在考试或作业中写的正经文章，可作为初中作文参考。</p>
+                        <a class="btn btn-outline-secondary btn-sm" href="kind2/index.html">浏览</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">工具与游戏</h2>
+                        <p class="card-text">尚未建成，敬请期待。</p>
+                        <a class="btn btn-outline-secondary btn-sm disabled">敬请期待</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
     </div>
-    <div>    
-        <h2>推荐阅读</h2>
-        <p><a href="star.html">照我前行的那颗星</a></p>
-        <p><a href="voice.html">天赐之声</a></p>
-    </div>
-    <div>    
-        <h2注意事项</h2>
-        <p>如果无法流畅浏览此页面，推荐使用 Watt Tookit 加速。<a href="https://steampp.net">下载链接</a></p>
-    </div>
-    <p><br/><a href="index.html"><img/ src="https://pic.imgdb.cn/item/63943ac8b1fccdcd367c79c8.png" class="logo" width="100px" height="10%" alt="返回首页" title="返回首页"></a></p>
+
+    <script src="bootstrap5/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

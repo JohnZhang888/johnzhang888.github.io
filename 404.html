@@ -1,26 +1,43 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Found</title>
-    <style>
-    @import"main.css"; 
-    @import"404.css";
-    </style>
-    <link href="https://fonts.googlefonts.cn/css?family=Roboto|Roboto+Slab" rel="stylesheet">
-</head>
-<body>
-    <h1>404 Not Found</h1>
-    <div>
-    <p>找不到网页，原因可能是：</p>
-    <li>你输入了错误的网址（URL）。</li>
-    <li>网页曾经存在，但现在已经被删除。</li>
-    <li>网页的内容尚未完成，使用此页面占位。</li>
-    <p><a href="index.html"><button>返回主页</button></a></p>
-    </div>
-    <p><br/><a href="index.html"><img/ src="https://pic.imgdb.cn/item/63943ac8b1fccdcd367c79c8.png" class="logo" width="100px" height="10%" alt="返回首页"></a></p>
+<!doctype html>
+<html lang="zh-CN" data-bs-theme="light">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="bootstrap5/bootstrap.min.css" rel="stylesheet">
+    <!--不要忘记更换这里的路径！-->
+    <link href="styles/main.css" rel="stylesheet">
+    <title>404 Not Found</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo/shortcut.png"></link>
+</head>
+
+<body class="bg-danger text-white">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="btn btn-link" href="about/index.html">关于</a>
+            <a href="../index.html" class="navbar-brand logo"><b>John</a></b>
+            <a class="btn btn-link">English</a>
+        </div>
+    </nav>  
+    <br />
+    
+    <div class="container">
+        <h6 class="text-danger"><b>404 Not Found</b></h6>
+        <h1>网页不存在</h1>
+        <br />
+        <p>找不到网页，原因可能是：</p>
+        <li>你输入了错误的网址（URL）。</li>
+        <li>网页曾经存在，但现在已经被删除。</li>
+        <li>网页的内容尚未完成，使用此页面占位。</li>
+        <br />
+        <a class="btn btn-light text-danger" href="index.html">返回主页</a>
+    </div>
+
+    <!--不要忘记更换这里的路径！-->
+    <script src="bootstrap5/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

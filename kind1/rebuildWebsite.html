@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="../bootstrap5/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/main.css" rel="stylesheet">
+    <title>网站重建记</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../logo/shortcut.png"></link>
+</head>
+
+<body class="bg-body-secondary">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="btn btn-link" href="../about/index.html">关于</a>
+            <a href="../index.html" class="navbar-brand logo"><b>John</a></b>
+            <a class="btn btn-link">English</a>
+        </div>
+    </nav>
+    <br />
+
+    <div class="container">
+        <h6 class="text-primary"><a href="index.html"><b>随写随记</b></a></h6>
+        <h1>网站重建记</h1>
+        <p class="text-muted">记录我重新搭建本网站的过程。</p>
+        <br />
+
+        <!--正文开始-->
+        <h3>起因</h3>
+        <p>这几日闲来无事，把之前老掉牙的网站翻修一下。</p>
+        <p>其实我想重建网站的念头并不是突然冒出来的。在5月份的时候，我注意到好友<a class="link" href="https://commongoldingot.github.io"
+                target="_blank">Rabbit</a>的网站已焕然一新，远超出我的想象（之前我还在自己的网页里吐槽过）。于是我和他吃饭的时候谈起这件事情来，做出承诺，暑假的时候要重建我的网站。</p>
+        <p>现在暑假已到，该是履行承诺的时候了。</p>
+
+        <h3>工欲善其事，必先利其器</h3>
+        <p>之前我一直使用 Windows 操作系统编写网站，虽说没有什么不对，但是运行速度慢一点，安装软件麻烦一点，配置环境麻烦一点……这些“一点”逼迫着我离开这个操作系统。对不起，微软，我最终还是选择了
+            GNU/Linux。至于发行版，我选择了 Linux Mint，基于强大的 Ubuntu 却又没有 snap 和广告的骚扰，运行速度也是杠杠的。</p>
+        <p>不过微软也不用太伤心，毕竟编辑器还是 Visual Studio Code，从我开始编程的第一天就在用，实在顺手得很。</p>
+
+        <h3>轮子选得好，不用自己造</h3>
+        <p>看到 Rabbit 跟我炫耀他的网站有多么大，CSS有多么长，我便嗤之以鼻。现在网上现成的 CSS、JS 框架那么多，何必自己造轮子呢？选择自己觉得方便、顺手的一款就行了。于是，我选择了 <a class="link"
+                href="https://getbootstrap.com">Bootstrap</a>。</p>
+        <p>我本来是想用 Tailwind CSS 的，然而大家对比一下下面这两段代码就知道我为什么不用它了。</p>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <p class="text-danger">Tailwind CSS</p>
+                <p><code>
+                    &lt;button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"&gt;Button&lt;/button&gt;
+                </code></p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p class="text-success">Bootstrap</p>
+                <p><code>
+                    &lt;button class="btn btn-primary"&gt;Button&lt;/button&gt;
+                </code></p>
+            </div>
+        </div>
+
+        <h3>开始编写</h3>
+        <p>准备工作完成，接下来就该编写网站了。这个过程比较枯燥：编辑器里写一点，<kbd>Crtl</kbd> + <kbd>S</kbd> 一下，然后再切换到浏览器，<kbd>F5</kbd> 一下……最后就写好了（其实还没有写好）。</p>
+        <!--正文结束-->
+        <br />
+        <p class="text-secondary">张永康，2023 年 7 月 26 日。</p>
+    </div>
+
+    <script src="../bootstrap5/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
