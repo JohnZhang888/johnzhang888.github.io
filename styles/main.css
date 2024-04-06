@@ -8,3 +8,4 @@
 .btn-john:hover{background-color: var(--john--hover-color);}
 .btn-john:active{background-color: var(--john--active-color);}
 .logo, .logo:hover, .logo:active{color:var(--john--brand-color)}
+.bg-danger-secondary{background-color: #efe9ea;}
