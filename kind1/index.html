@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <link href="../bootstrap5/bootstrap.min.css" rel="stylesheet">
     <link href="../styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <title>随写随记</title>
     <link rel="shortcut icon" type="image/x-icon" href="../logo/shortcut.png"></link>
 </head>
@@ -18,7 +19,10 @@
         <div class="container">
             <a class="btn btn-link" href="../about/index.html">关于</a>
             <a href="../index.html" class="navbar-brand logo"><b>John</a></b>
-            <a class="btn btn-link">English</a>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-primary btn-sm" onclick="lightTheme()"><i class="bi bi-brightness-high-fill"></i></button>
+                <button type="button" class="btn btn-outline-primary btn-sm" onclick="darkTheme()"><i class="bi bi-moon-stars-fill"></i></button>
+            </div>
         </div>
     </nav>  
     <br />

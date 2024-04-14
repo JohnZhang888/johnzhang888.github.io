@@ -9,6 +9,7 @@
     <link href="https://johnzhang888.github.io/bootstrap5/bootstrap.min.css" rel="stylesheet">
     <!--不要忘记更换这里的路径！-->
     <link href="https://johnzhang888.github.io/styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <title>404 Not Found</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://johnzhang888.github.io/logo/shortcut.png"></link>
 </head>
@@ -19,7 +20,10 @@
         <div class="container">
             <a class="btn btn-link" href="https://johnzhang888.github.io/about/index.html">关于</a>
             <a href="https://johnzhang888.github.io/index.html" class="navbar-brand logo"><b>John</a></b>
-            <a class="btn btn-link">English</a>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-primary btn-sm" onclick="lightTheme()"><i class="bi bi-brightness-high-fill"></i></button>
+                <button type="button" class="btn btn-outline-primary btn-sm" onclick="darkTheme()"><i class="bi bi-moon-stars-fill"></i></button>
+            </div>
         </div>
     </nav>  
     <br />
