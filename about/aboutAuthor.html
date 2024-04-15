@@ -9,7 +9,7 @@
     <link href="../bootstrap5/bootstrap.min.css" rel="stylesheet">
     <!--不要忘记更换这里的路径！-->
     <link href="../styles/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="../styles/bootstrap-icons.min.css" rel="stylesheet">
     <title>John's website</title>
     <link rel="shortcut icon" type="image/x-icon" href="../logo/shortcut.png"></link>
 </head>
@@ -18,12 +18,9 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <a class="btn btn-link" href="../about/index.html">关于</a>
-            <a href="../index.html" class="navbar-brand logo"><b>John</a></b>
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-outline-primary btn-sm" onclick="lightTheme()"><i class="bi bi-brightness-high-fill"></i></button>
-                <button type="button" class="btn btn-outline-primary btn-sm" onclick="darkTheme()"><i class="bi bi-moon-stars-fill"></i></button>
-            </div>
+            <a class="btn btn-link text-decoration-none" href="about/index.html"><i class="bi bi-info-lg"></i> 关于</a>
+            <a href="../index.html"><img src="https://pic.imgdb.cn/item/661d3f9e0ea9cb1403d29f29.png" height="36"></a>
+            <button class="btn btn-link text-decoration-none" onclick="changeTheme()"><i class="bi bi-highlights"></i> 切换主题</button>        
         </div>
     </nav>  
     <br />
@@ -40,7 +37,8 @@
     </div>
 
     <!--不要忘记更换这里的路径！-->
-    <script src="../bootstrap5/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap5/bootstrap.min.js"></script>
+    <script src="../script/main.js"></script>
 </body>
 
 </html>
