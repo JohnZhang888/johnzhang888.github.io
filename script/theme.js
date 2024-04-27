@@ -40,7 +40,7 @@ function darkTheme() {
   autoButton.className = "btn btn-outline-primary btn-sm"
   lightButton.className = "btn btn-outline-primary btn-sm"
   darkStyle()
-  Cookies.set('theme', 'dark')
+  Cookies.set('theme', 'dark', { sameSite: false })
 }
 function autoTheme() {
   darkButton.className = "btn btn-outline-primary btn-sm"
@@ -52,7 +52,7 @@ function autoTheme() {
   else {
     lightStyle()
   }
-  Cookies.set('theme', 'auto')
+  Cookies.set('theme', 'auto', { sameSite: false })
 }
 
 if (Cookies.get('theme') == 'light') {
