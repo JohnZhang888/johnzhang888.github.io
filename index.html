@@ -2,83 +2,91 @@
 <html lang="zh-CN" data-bs-theme="light" id="html">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link href="bootstrap5/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet">
-    <link href="styles/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="logo/shortcut.png">
-    </link>
-    <title>John 的网站</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link href="bootstrap5/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/light.css" rel="stylesheet">
+  <link href="styles/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="logo/shortcut.png">
+  </link>
+  <title>John 的网站</title>
 </head>
 
 <body class="bg-body-secondary">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-            <a class="btn btn-link text-decoration-none" href="about/index.html"><i class="bi bi-info-lg"></i> 关于</a>
-            <a href="index.html"><img src="https://pic.imgdb.cn/item/661d3f9e0ea9cb1403d29f29.png" height="36"></a>
-            <button class="btn btn-link text-decoration-none" onclick="changeTheme()"><i class="bi bi-highlights"></i> 切换主题</button>        
-        </div>
-    </nav>
-    <br />
-
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-        <br />
-        <div class="card">
-            <div class="card-body">
-                <h1 class="card-title">欢迎来访 John 的网站！</h1>
-                <p class="card-text"><ruby>人<rt>任</rt></ruby>不犯我，我不犯<ruby>人<rt>任</rt></ruby>；<ruby>人<rt>任</rt>
-                        </ruby>若犯我，我必犯<ruby>人<rt>任</rt></ruby>。<del>就是告诉你，不要轻易尝试攻击我的网站啦 :)</del></p>
-            </div>
-        </div>
-        <br />
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title text-primary"><i class="bi bi-stars"></i> <strong>最新页面</strong></h6>
-                <h2>春到回初</h2>
-                <p class="card-text">春暖花开，万物复苏。</p>
-                <a class="btn btn-primary" href="kind2/spring.html">阅读</a>
-            </div>
-        </div>
-        <br />
-        <div class="row gy-2 gx-2">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">随写随记</h2>
-                        <p class="card-text">随便写点东西，什么都写。</p>
-                        <a class="btn btn-outline-secondary btn-sm" href="kind1/index.html">浏览</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">正经文摘</h2>
-                        <p class="card-text">我在考试或作业中写的正经文章，可作为初中作文参考。</p>
-                        <a class="btn btn-outline-secondary btn-sm" href="kind2/index.html">浏览</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">工具与游戏</h2>
-                        <p class="card-text">一些实际上不好用的工具和（可能会有的）无聊的游戏。</p>
-                        <a class="btn btn-outline-secondary btn-sm" href="tools-and-games/index.html">浏览</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br />
-        <p>友情链接：任浩铭的网站——<a href="https://commongoldingot.github.io">Common Gold Ingot</a>。</p>
+      <a class="btn btn-link text-decoration-none" href="about/index.html"><i class="bi bi-info-lg"></i> 关于</a>
+      <a href="index.html"><img src="https://pic.imgdb.cn/item/661d3f9e0ea9cb1403d29f29.png" height="36" id="logo"></a>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-outline-primary btn-sm" id="autoButton" onclick="autoTheme()"><i
+            class="bi bi-circle-half"></i></button>
+        <button type="button" class="btn btn-outline-primary btn-sm" id="lightButton" onclick="lightTheme()"><i
+            class="bi bi-sun-fill"></i></button>
+        <button type="button" class="btn btn-outline-primary btn-sm" id="darkButton" onclick="darkTheme()"><i
+            class="bi bi-moon-stars-fill"></i></button>
+      </div>
     </div>
+  </nav>
+  <br />
 
-    <script src="bootstrap5/bootstrap.min.js"></script>
-    <script src="script/main.js"></script>
+  <div class="container">
+    <br />
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">欢迎来访 John 的网站！</h1>
+        <p class="card-text"><ruby>人<rt>任</rt></ruby>不犯我，我不犯<ruby>人<rt>任</rt></ruby>；<ruby>人<rt>任</rt>
+          </ruby>若犯我，我必犯<ruby>人<rt>任</rt></ruby>。<del>就是告诉你，不要轻易尝试攻击我的网站啦 :)</del></p>
+      </div>
+    </div>
+    <br />
+    <div class="card">
+      <div class="card-body">
+        <h6 class="card-title text-primary"><i class="bi bi-stars"></i> <strong>最新页面</strong></h6>
+        <h2>春到回初</h2>
+        <p class="card-text">春暖花开，万物复苏。</p>
+        <a class="btn btn-primary" href="kind2/spring.html">阅读</a>
+      </div>
+    </div>
+    <br />
+    <div class="row gy-2 gx-2">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">随写随记</h2>
+            <p class="card-text">随便写点东西，什么都写。</p>
+            <a class="btn btn-outline-secondary btn-sm" href="kind1/index.html">浏览</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">正经文摘</h2>
+            <p class="card-text">我在考试或作业中写的正经文章，可作为初中作文参考。</p>
+            <a class="btn btn-outline-secondary btn-sm" href="kind2/index.html">浏览</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">工具与游戏</h2>
+            <p class="card-text">一些实际上不好用的工具和（可能会有的）无聊的游戏。</p>
+            <a class="btn btn-outline-secondary btn-sm" href="tools-and-games/index.html">浏览</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <p>友情链接：任浩铭的网站——<a href="https://commongoldingot.github.io">Common Gold Ingot</a>。</p>
+  </div>
+
+  <script src="bootstrap5/bootstrap.min.js"></script>
+  <script src="script/js.cookie.min.js"></script>
+  <script src="script/theme.js"></script>
 </body>
 
 </html>

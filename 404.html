@@ -2,43 +2,53 @@
 <html lang="zh-CN" data-bs-theme="light">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link href="https://johnzhang888.github.io/bootstrap5/bootstrap.min.css" rel="stylesheet">
-    <!--不要忘记更换这里的路径！-->
-    <link href="https://johnzhang888.github.io/styles/main.css" rel="stylesheet">
-    <link href="../styles/bootstrap-icons.min.css" rel="stylesheet">
-    <title>404 Not Found</title>
-    <link rel="shortcut icon" type="image/x-icon" href="https://johnzhang888.github.io/logo/shortcut.png"></link>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link href="https://johnzhang888.github.io/bootstrap5/bootstrap.min.css" rel="stylesheet">
+  <!--不要忘记更换这里的路径！-->
+  <link href="https://johnzhang888.github.io/styles/light.css" rel="stylesheet">
+  <link href="https://johnzhang888.github.io/styles/bootstrap-icons.min.css" rel="stylesheet">
+  <title>404 Not Found</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://johnzhang888.github.io/logo/shortcut.png">
+  </link>
 </head>
 
 <body class="bg-danger" style="--bs-bg-opacity: .075">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-            <a class="btn btn-link text-decoration-none" href="https://johnzhang888.github.io/about/index.html"><i class="bi bi-info-lg"></i> 关于</a>
-            <a href="htpps://johnzhang888.github.io/index.html"><img src="https://pic.imgdb.cn/item/661d3f9e0ea9cb1403d29f29.png" height="36"></a>
-            <button class="btn btn-link text-decoration-none" onclick="changeTheme()"><i class="bi bi-highlights"></i> 切换主题</button>        
-        </div>
-    </nav>  
-    <br />
-    
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-        <h6 class="text-danger"><b>404 Not Found</b></h6>
-        <h1>网页不存在</h1>
-        <br />
-        <p>找不到网页，原因可能是：</p>
-        <li>你输入了错误的网址（URL）。</li>
-        <li>网页曾经存在，但现在已经被删除。</li>
-        <li>网页的内容尚未完成，使用此页面占位。</li>
-        <br />
-        <a class="btn btn-danger" href="index.html">返回主页</a>
+      <a class="btn btn-link text-decoration-none" href="about/index.html"><i class="bi bi-info-lg"></i> 关于</a>
+      <a href="index.html"><img src="https://pic.imgdb.cn/item/661d3f9e0ea9cb1403d29f29.png" height="36" id="logo"></a>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-outline-primary btn-sm" id="autoButton" onclick="autoTheme()"><i
+            class="bi bi-circle-half"></i></button>
+        <button type="button" class="btn btn-outline-primary btn-sm" id="lightButton" onclick="lightTheme()"><i
+            class="bi bi-sun-fill"></i></button>
+        <button type="button" class="btn btn-outline-primary btn-sm" id="darkButton" onclick="darkTheme()"><i
+            class="bi bi-moon-stars-fill"></i></button>
+      </div>
     </div>
+  </nav>
+  <br />
 
-    <!--不要忘记更换这里的路径！-->
-    <script src="https://johnzhang888.github.io/sbootstrap5/bootstrap.bundle.min.js"></script>
+  <div class="container">
+    <h6 class="text-danger"><b>404 Not Found</b></h6>
+    <h1>网页不存在</h1>
+    <br />
+    <p>找不到网页，原因可能是：</p>
+    <li>你输入了错误的网址（URL）。</li>
+    <li>网页曾经存在，但现在已经被删除。</li>
+    <li>网页的内容尚未完成，使用此页面占位。</li>
+    <br />
+    <a class="btn btn-danger" href="index.html">返回主页</a>
+  </div>
+
+  <!--不要忘记更换这里的路径！-->
+  <script src="https://johnzhang888.github.io/sbootstrap5/bootstrap.min.js"></script>
+  <script src="script/js.cookie.min.js"></script>
+  <script src="script/theme.js"></script>
 </body>
 
 </html>
