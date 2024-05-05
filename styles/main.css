@@ -147,3 +147,43 @@
   font-size: 17px;
   line-height: 160%;
 }
+
+.carousel-image {
+  height: 400px;
+  object-fit: cover;
+}
+
+.small-img {
+  height: 128px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#kind2-parent {
+  position: relative;
+}
+
+#voice-img,
+#star-img,
+#spring-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#star-img,
+#spring-img {
+  display: none;
+}
+
+.kind2-z-index-3 {
+  z-index: 3;
+}
+
+.kind2-z-index-2 {
+  z-index: 2;
+}
+
+.kind2-z-index-1 {
+  z-index: 1;
+}
