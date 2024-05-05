@@ -4,6 +4,7 @@ const darkButton = document.querySelector('#darkButton')
 const autoButton = document.querySelector('#autoButton') //赋值三个颜色切换按钮
 const logo = document.querySelector('#logo')
 const html = document.querySelector('html')
+const themeCSS = document.querySelector('#themeCSS')
 let priBtn, priOutBtn, priText //声明三种要改变的class
 function changeClass(a, b, c) {
   a = document.querySelectorAll('.' + b)
@@ -15,16 +16,16 @@ function changeClass(a, b, c) {
 
 function lightStyle() {
   html.setAttribute('data-bs-theme', 'light')
-  changeClass(priBtn, 'btn-info', 'btn-primary')
-  changeClass(priOutBtn, 'btn-outline-info', 'btn-outline-primary')
-  changeClass(priText, 'text-info', 'text-primary')
+  changeClass(priBtn, 'btn-dark-primary', 'btn-primary')
+  changeClass(priOutBtn, 'btn-outline-dark-primary', 'btn-outline-primary')
+  changeClass(priText, 'text-dark-john', 'text-john')
   logo.src = 'https://pic.imgdb.cn/item/661d3f9e0ea9cb1403d29f29.png'
 } //亮色样式
 function darkStyle() {
   html.setAttribute('data-bs-theme', 'dark')
-  changeClass(priBtn, 'btn-primary', 'btn-info')
-  changeClass(priOutBtn, 'btn-outline-primary', 'btn-outline-info')
-  changeClass(priText, 'text-primary', 'text-info')
+  changeClass(priBtn, 'btn-primary', 'btn-dark-primary')
+  changeClass(priOutBtn, 'btn-outline-primary', 'btn-outline-dark-primary')
+  changeClass(priText, 'text-john', 'text-dark-john')
   logo.src = 'https://pic.imgdb.cn/item/639695feb1fccdcd36b77c6e.png'
 } //暗色样式
 
