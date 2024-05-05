@@ -4,7 +4,7 @@
   --john-3: #afedb9;
   --john-4: #82e093;
   --john-5: #59d474;
-  --john-6: #34c759;
+  --john-6: #29c04f;
   --john-7: #22a146;
   --john-8: #147a34;
   --john-9: #095423;
@@ -115,6 +115,10 @@
   .link {
     color: var(--john-5)
   }
+
+  .link:hover {
+    color: var(--john-6)
+  }
 }
 
 [data-bs-theme=light] {
@@ -131,6 +135,10 @@
 
   .link {
     color: var(--john-6)
+  }
+
+  .link:hover {
+    color: var(--john-7)
   }
 }
 
