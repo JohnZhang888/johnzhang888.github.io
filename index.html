@@ -1,94 +1,199 @@
 <!doctype html>
-<html lang="zh-CN" data-bs-theme="light" id="html">
+<html lang="zh-CN" data-bs-theme="light">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <link href="bootstrap5/bootstrap.min.css" rel="stylesheet">
-  <!--<link href="styles/main.css" rel="stylesheet" id="themeCSS">-->
+  <link href="styles/bootstrap.min.css" rel="stylesheet">
+  <!--不要忘记更换这里的路径！-->
   <link href="styles/main.css" rel="stylesheet">
   <link href="styles/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="shortcut icon" type="image/x-icon" href="logo/shortcut.png">
-  </link>
-  <title>John 的网站</title>
+  <title></title>
+  <link rel="shortcut icon" type="image/x-icon" href=“logo/shortcut.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC">
+
+
 </head>
 
-<body class="index-bg">
-
-  <nav class="navbar navbar-expand-lg nav-bg">
-    <div class="container main-text">
-      <a class="btn btn-link text-decoration-none" href="about/index.html"><i class="bi bi-info-lg"></i> 关于</a>
-      <a href="index.html"><img src="https://pic.imgdb.cn/item/661d3f9e0ea9cb1403d29f29.png" height="36" id="logo"></a>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-outline-primary btn-sm" id="autoButton" onclick="autoTheme()"><i
-            class="bi bi-circle-half"></i></button>
-        <button type="button" class="btn btn-outline-primary btn-sm" id="lightButton" onclick="lightTheme()"><i
-            class="bi bi-sun-fill"></i></button>
-        <button type="button" class="btn btn-outline-primary btn-sm" id="darkButton" onclick="darkTheme()"><i
-            class="bi bi-moon-stars-fill"></i></button>
-      </div>
+<body>
+  <div id="Navbar"></div>
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-  </nav>
-  <br />
-
-  <div class="container">
-    <br />
-    <div class="card">
-      <div class="card-body">
-        <h1 class="card-title">欢迎来访 John 的网站！</h1>
-        <p class="card-text"><ruby>人<rt>任</rt></ruby>不犯我，我不犯<ruby>人<rt>任</rt></ruby>；<ruby>人<rt>任</rt>
-          </ruby>若犯我，我必犯<ruby>人<rt>任</rt></ruby>。<del>就是告诉你，不要轻易尝试攻击我的网站啦 :)</del></p>
-      </div>
-    </div>
-    <br />
-    <div class="card">
-      <div class="card-body">
-        <h6 class="card-title text-john"><i class="bi bi-stars"></i> <strong>最新页面</strong></h6>
-        <h2>春到回初</h2>
-        <p class="card-text">春暖花开，万物复苏。</p>
-        <a class="btn btn-primary" href="kind2/spring.html">阅读</a>
-      </div>
-    </div>
-    <br />
-    <div class="row gy-2 gx-2">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title">随写随记</h2>
-            <p class="card-text">随便写点东西，什么都写。</p>
-            <a class="btn btn-outline-secondary btn-sm" href="kind1/index.html">浏览</a>
-          </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://pic.imgdb.cn/item/66372c210ea9cb1403872d40.jpg" class="d-block w-100 carousel-image" alt="">
+        <div class="carousel-caption d-md-block">
+          <h2 class="text-white -spring-title"></h2>
+          <p class="text-white -spring-description"></p>
+          <a class="btn btn-lg btn-primary -read" href="spring.html"></a>
+          <br><br>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title">正经文摘</h2>
-            <p class="card-text">我在考试或作业中写的正经文章，可作为初中作文参考。</p>
-            <a class="btn btn-outline-secondary btn-sm" href="kind2/index.html">浏览</a>
-          </div>
+      <div class="carousel-item">
+        <img src="https://pic.imgdb.cn/item/663791ff0ea9cb1403859b6d.png" class="d-block w-100 carousel-image" alt="">
+        <div class="carousel-caption d-md-block">
+          <h2 class="text-white -rebuild-title"></h2>
+          <p class="text-white -rebuild-description"></p>
+          <a class="btn btn-lg btn-primary -read" href="rebuild.html"></a>
+          <br><br>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title">工具与游戏</h2>
-            <p class="card-text">一些实际上不好用的工具和（可能会有的）无聊的游戏。</p>
-            <a class="btn btn-outline-secondary btn-sm" href="tools-and-games/index.html">浏览</a>
-          </div>
+      <div class="carousel-item">
+        <img src="https://pic.52112.com/2019/07/23/JPG-190723_587/pdXtrNWpmz_small.jpg"
+          class="d-block w-100 carousel-image" alt="" style="filter: brightness(0.4);">
+        <div class="carousel-caption d-md-block">
+          <h2 class="text-white -xyes-title">XYes</h2>
+          <p class="text-white -xyes-description"></p>
+          <a class="btn btn-lg btn-primary -try" href="xyes.html"></a>
+          <br><br>
         </div>
       </div>
     </div>
-    <br />
-    <p>友情链接：任浩铭的网站——<a class="link" href="https://commongoldingot.github.io">Common Gold Ingot</a>。</p>
-    <p><a class="link" href="https://johnzhang888.github.io/v3">体验全新的网站！仍在内测当中，功能不全。</a></p>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev"
+      style="background-image: linear-gradient(to right, black, transparent);">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next"
+      style="background-image: linear-gradient(to left, black, transparent);">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
-  <script src="bootstrap5/bootstrap.bundle.min.js"></script>
-  <script src="script/js.cookie.min.js"></script>
-  <script src="script/theme.js"></script>
+  <br>
+  <div class="container">
+    <div class="row gx-8 gy-8">
+      <div class="col-12 col-md-6">
+        <div class="row gx-4">
+          <div class="col-4">
+            <div id="kind1-img" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://pic.imgdb.cn/item/663791ff0ea9cb1403859b6d.png" class="small-img">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+            <a class="body-link" href="essays.html">
+              <h3 class="-essays-title"></h3>
+            </a>
+            <ul>
+              <li><a href="rebuild.html" class="link -rebuild-title" onmouseenter="MouseOnRebuild"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="row gx-4">
+          <div class="col-4">
+            <div id="kind2-img" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://pic.imgdb.cn/item/66373a8e0ea9cb1403ac65ec.jpg" class="small-img">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://tse2-mm.cn.bing.net/th/id/OIP-C.Uul-EqvhOLrKppSEbA8XvwAAAA?w=80&h=80&c=7&r=0&o=5&pid=1.7"
+                    class="small-img">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://pic.imgdb.cn/item/66372c210ea9cb1403872d40.jpg" class="small-img">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+            <a class="body-link text-decoration-none" href="compositions.html">
+              <h3 class="-composition-title"></h3>
+            </a>
+            <ul>
+              <li><a href="voice.html" class="link -voice-title" onmouseenter="MouseOnVoice()"></a></li>
+              <li><a href="star.html" class="link -star-title" onmouseenter="MouseOnStar()"></a></li>
+              <li><a href="spring.html" class="link -spring-title" onmouseenter="MouseOnSpring()"></a></li>
+            </ul>
+          </div>
+        </div>
+        <br>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="row gx-4">
+          <div class="col-4">
+            <div id="tag-img" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://pic.52112.com/2019/07/23/JPG-190723_587/pdXtrNWpmz_small.jpg" class="small-img">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://is5-ssl.mzstatic.com/image/thumb/Purple117/v4/26/18/32/26183275-0d9d-27ca-492b-ef727affa7e2/source/512x512bb.jpg"
+                    class="small-img">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+            <a href="tools-and-games.html" class="body-link">
+              <h3 class="-tag-title"></h3>
+            </a>
+            <ul>
+              <li><a href="xyes.html" class="link -xyes-title" onmouseenter="mouseOnTag0()"></a>
+              <li><a href="spy.html" class="link -spy-title" onmouseenter="mouseOnTag1()"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+  <br><br>
+  <!--不要忘记更换这里的路径！-->
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/js.cookie.min.js"></script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/components.js"></script>
+  <script>
+    function otherChineseText() {
+      ci('title', 'John Zhang 的网站')
+      ci('.-too-ugly', '这破主页太丑、太抽象了，等我有时间一定做个新的！')
+    }
+    function otherEnglishText() {
+      ci('title', 'John Zhang\'s Website')
+      ci('.-too-ugly', 'The sh*t homepage is too ugly and abtract! Wait me to make a new one as sonn as I\'m free!')
+    }
+  </script>
+  <script src="scripts/language.js"></script>
+  <script src="scripts/theme.js"></script>
+  <script>
+    function MouseOnVoice() {
+      $('#kind2-img').carousel(0)
+    }
+    function MouseOnStar() {
+      $('#kind2-img').carousel(1)
+    }
+    function MouseOnSpring() {
+      $('#kind2-img').carousel(2)
+    }
+    function mouseOnTag0() {
+      $('#tag-img').carousel(0)
+    }
+    function mouseOnTag1() {
+      $('#tag-img').carousel(1)
+    }
+  </script>
 </body>
 
 </html>

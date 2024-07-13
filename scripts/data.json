@@ -1,0 +1,77 @@
+{
+  "index": {
+    "link": "index.html",
+    "title": [
+      "张永康的网站",
+      "John Zhang's website"
+    ]
+  },
+  "compositions": {
+    "index": {
+      "isIndex": true,
+      "title": [
+        "正经文摘",
+        "Compositions"
+      ],
+      "link": "compositions.html",
+      "description": [
+        "随便写点东西，什么都写。",
+        "Write anything freely."
+      ]
+    },
+    "star": {
+      "title": [
+        "照我前行的一颗星",
+        "The Star that Leads Me to Go On"
+      ],
+      "description": [
+        "中国共产党如一颗明星，永远指引我前行。",
+        "The CPC is like a bright star that always leads me to go on."
+      ],
+      "link": "star.html",
+      "image": "https://tse2-mm.cn.bing.net/th/id/OIP-C.Uul-EqvhOLrKppSEbA8XvwAAAA?w=80&h=80&c=7&r=0&o=5&pid=1.7",
+      "author": [
+        "张永康",
+        "John Zhang"
+      ],
+      "date": "2022/11"
+    },
+    "voice": {
+      "title": [
+        "天赐之声",
+        "Voice from the God"
+      ],
+      "description": [
+        "聆听天堂赐予的绝妙之音。",
+        "Listen to the wonderful sound from the heaven."
+      ],
+      "link": "voice.html",
+      "image": "https://pic.imgdb.cn/item/66373a8e0ea9cb1403ac65ec.jpg",
+      "author": [
+        "张永康",
+        "John Zhang"
+      ],
+      "date": "2022/11"
+    },
+    "spring": {
+      "title": [
+        "天赐之声",
+        "Voice from the God"
+      ],
+      "description": [
+        "聆听天堂赐予的绝妙之音。",
+        "Listen to the wonderful sound from the heaven."
+      ],
+      "link": "voice.html",
+      "image": "https://pic.imgdb.cn/item/66373a8e0ea9cb1403ac65ec.jpg",
+      "author": [
+        "张永康",
+        "John Zhang"
+      ],
+      "date": "2022/11"
+    },
+    "essays": {
+      
+    }
+  }
+}

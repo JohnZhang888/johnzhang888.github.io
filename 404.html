@@ -6,49 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <link href="https://johnzhang888.github.io/bootstrap5/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/bootstrap.min.css" rel="stylesheet">
   <!--不要忘记更换这里的路径！-->
-  <link href="https://johnzhang888.github.io/styles/main.css" rel="stylesheet">
-  <link href="https://johnzhang888.github.io/styles/bootstrap-icons.min.css" rel="stylesheet">
-  <title>404 Not Found</title>
-  <link rel="shortcut icon" type="image/x-icon" href="https://johnzhang888.github.io/logo/shortcut.png">
-  </link>
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/bootstrap-icons.min.css" rel="stylesheet">
+  <title class="-title"></title>
+  <link rel="shortcut icon" type="image/x-icon" href=“logo/shortcut.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC">
+
+
 </head>
 
-<body class="bg-danger" style="--bs-bg-opacity: .075">
-
-  <nav class="navbar navbar-expand-lg nav-bg">
-    <div class="container main-text">
-      <a class="btn btn-link text-decoration-none" href="about/index.html"><i class="bi bi-info-lg"></i> 关于</a>
-      <a href="index.html"><img src="https://pic.imgdb.cn/item/661d3f9e0ea9cb1403d29f29.png" height="36" id="logo"></a>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-outline-primary btn-sm" id="autoButton" onclick="autoTheme()"><i
-            class="bi bi-circle-half"></i></button>
-        <button type="button" class="btn btn-outline-primary btn-sm" id="lightButton" onclick="lightTheme()"><i
-            class="bi bi-sun-fill"></i></button>
-        <button type="button" class="btn btn-outline-primary btn-sm" id="darkButton" onclick="darkTheme()"><i
-            class="bi bi-moon-stars-fill"></i></button>
-      </div>
-    </div>
-  </nav>
-  <br />
-
-  <div class="container main-text">
-    <h6 class="text-danger"><b>404 Not Found</b></h6>
-    <h1>网页不存在</h1>
-    <br />
-    <p>找不到网页，原因可能是：</p>
+<body class="bg-danger" style="--bs-bg-opacity: .075;">
+  <div id="Navbar"></div>
+  <div class="container">
+    <br>
+    <h2 class="-title"></h2>
+    <br>
+    <div class="-text"></div>
+  </div>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/js.cookie.min.js"></script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/components.js"></script>
+  <script>
+    function otherChineseText() {
+      ci('.-title', '网页不存在')
+      ci('.-text', `<p>找不到网页，原因可能是：</p>
     <li>你输入了错误的网址（URL）。</li>
     <li>网页曾经存在，但现在已经被删除。</li>
     <li>网页的内容尚未完成，使用此页面占位。</li>
     <br />
-    <a class="btn btn-danger" href="index.html">返回主页</a>
-  </div>
-
-  <!--不要忘记更换这里的路径！-->
-  <script src="https://johnzhang888.github.io/sbootstrap5/bootstrap.bundle.min.js"></script>
-  <script src="script/js.cookie.min.js"></script>
-  <script src="script/theme.js"></script>
+    <a class="btn btn-danger" href="index.html">返回主页</a>`)
+    }
+    function otherEnglishText() {
+      ci('.-title', 'Page Not Found')
+      ci('.-text', `<p>Cannot found the page. The reason may be:</p>
+    <li>You inputed the wrong URL.</li>
+    <li>The page used to exist but has been deleted.</li>
+    <li>The website hasn't yet completed so I use this page as a placeholder. </li>
+    <br />
+    <a class="btn btn-danger" href="index.html">返回主页</a>`)
+    }
+  </script>
+  <script src="scripts/language.js"></script>
+  <script src="scripts/theme.js"></script>
 </body>
 
 </html>

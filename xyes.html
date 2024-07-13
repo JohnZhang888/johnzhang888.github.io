@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN" data-bs-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link href="styles/bootstrap.min.css" rel="stylesheet">
+  <!--不要忘记更换这里的路径！-->
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/bootstrap-icons.min.css" rel="stylesheet">
+  <title class="-xyes-title"></title>
+  <link rel="shortcut icon" type="image/x-icon" href=“logo/shortcut.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC">
+
+
+</head>
+
+<body>
+  <div id="Navbar"></div>
+  <div class="container">
+    <br>
+    <div class="row gx-4 gy-4">
+      <div class="col-12 col-md-8">
+        <a href="tools-and-games.html" class="-tag-title link text-decoration-none"></a>&ensp;
+        <span class="-math-tool badge badge-blue fw-normal mb-2" style="font-size: 14px;"></span>
+        <h2 class="-xyes-title"></h2>
+        <p class="text-body-tertiary">
+          <i class="bi bi-person-circle"></i>
+          <span class="-john-zhang-and-rabbit"></span>
+          &emsp;
+          <i class="bi bi-calendar-fill"></i>&ensp;2023/9/3
+        </p>
+        <p class="-xyes-description"></p>
+        <div class="input-group mb-2">
+          <input tyle="number" id="a11" class="form-control text-end" aria-describedby="a11-label">
+          <span class="input-group-text" id="a11-label">x +</span>
+          <input tyle="number" id="a12" class="form-control text-end" aria-describedby="a12-label">
+          <span class="input-group-text" id="a12-label">y =</span>
+          <input tyle="number" id="b1" class="form-control" aria-describedby="b1-label">
+        </div>
+        <div class="input-group mb-3">
+          <input tyle="number" id="a21" class="form-control text-end" aria-describedby="a21-label">
+          <span class="input-group-text" id="a21-label">x +</span>
+          <input tyle="number" id="a22" class="form-control text-end" aria-describedby="a22-label">
+          <span class="input-group-text" id="a22-label">y =</span>
+          <input tyle="number" id="b2" class="form-control" aria-describedby="b2-label">
+        </div>
+        <button class="-solve btn btn-primary mb-3" onclick="solve()"></button><br>
+        <p class="-result-is"></p>
+        <div class="input-group mb-2">
+          <span class="input-group-text" id="x-label">x =</span>
+          <input tyle="number" id="x" class="form-control" aria-describedby="x-label" readonly="readonly">
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="y-label">y =</span>
+          <input tyle="number" id="y" class="form-control" aria-describedby="y-label" readonly="readonly">
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <h4 class="-recommend-to-try mb-3"></h4>
+        <div class="row gx-3 mb-3">
+          <div class="col-4">
+            <img
+              src="https://is5-ssl.mzstatic.com/image/thumb/Purple117/v4/26/18/32/26183275-0d9d-27ca-492b-ef727affa7e2/source/512x512bb.jpg"
+              class="rounded small-img">
+          </div>
+          <div class="col-8">
+            <a class="-spy-title body-link text-decoration-none" href="spy.html"></a>
+            <br>
+            <span class="text-body-tertiary" style="font-size: 14px;">
+              <i class="bi bi-person-circle"></i>
+              <span class="-john-zhang"></span>
+              <br>
+              <i class="bi bi-calendar-fill"></i>&ensp;2023/9/3
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <!--不要忘记更换这里的路径！-->
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/js.cookie.min.js"></script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/components.js"></script>
+  <script>
+    function otherChineseText() {
+      ci('.-solve', '<i class="bi bi-calculator-fill"></i> 求解')
+      ci('.-result-is', '结果为：')
+      ci('.-john-zhang-and-rabbit', '张永康 & 任浩铭')
+    }
+    function otherEnglishText() {
+      ci('.-solve', '<i class="bi bi-calculator-fill"></i> Solve')
+      ci('.-result-is', 'The result is:')
+      ci('.-john-zhang-and-rabbit', 'John Zhang & Rabbit')
+    }
+  </script>
+  <script src="scripts/language.js"></script>
+  <script src="scripts/theme.js"></script>
+  <script>
+    //You can easily found out that the code with a strange style was not written by me, John Zhang. Instead, thanks to my best friend Rabbit who helped me to complete that.
+    function solve() {
+      var a11 = document.querySelector("#a11").value.valueOf();
+      var a12 = document.querySelector("#a12").value.valueOf();
+      var b1 = document.querySelector("#b1").value.valueOf();
+      var a21 = document.querySelector("#a21").value.valueOf();
+      var a22 = document.querySelector("#a22").value.valueOf();
+      var b2 = document.querySelector("#b2").value.valueOf();
+      var y = (b2 - a21 / a11 * b1) / (a22 - a21 / a11 * a12);
+      var x = (b1 - a12 * ((b2 - a21 / a11 * b1) / (a22 - a21 / a11 * a12))) / a11;
+      if (a11 != 0) {
+        document.querySelector("#x").value = x;
+        document.querySelector("#y").value = y;
+      }
+      if (Number.isFinite(x) == false || Number.isFinite(y) == false) {
+        if (Cookies.get('language') == 'zh_cn') {
+          document.querySelector("#x").value = "无解";
+          document.querySelector("#y").value = "无解";
+        }
+        else if (Cookies.get('language') == 'en_us') {
+          document.querySelector("#x").value = "No Solution";
+          document.querySelector("#y").value = "No Solution";
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

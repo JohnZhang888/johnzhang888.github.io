@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN" data-bs-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link href="styles/bootstrap.min.css" rel="stylesheet">
+  <!--不要忘记更换这里的路径！-->
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/bootstrap-icons.min.css" rel="stylesheet">
+  <title class="-rebuild-title"></title>
+  <link rel="shortcut icon" type="image/x-icon" href=“logo/shortcut.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC">
+
+
+</head>
+
+<body>
+  <div id="Navbar"></div>
+  <div class="container">
+    <br>
+    <div class="row gx-4 gy-4">
+      <div class="col-12 col-md-8">
+        <a href="essays.html" class="-essays-title link text-decoration-none"></a>&ensp;
+        <span class="-technology badge badge-blue fw-normal mb-2" style="font-size: 14px;"></span>
+        <h2 class="-rebuild-title"></h2>
+        <p class="text-body-tertiary">
+          <i class="bi bi-person-circle"></i>
+          <span class="-john-zhang"></span>
+          &emsp;
+          <i class="bi bi-calendar-fill"></i>&ensp;2023/7/26
+        </p>
+        <div class="No-english alert alert-info" role="alert">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          &ensp;The passage was not translated to English completely.
+        </div>
+        <div class="-text">
+        </div>
+
+      </div>
+      <div class="col-12 col-md-4 mb-4">
+        <h4 class="-recommend mb-3"></h4>
+        <div class="row gx-3 mb-3">
+          <div class="col-4">
+            <img src="https://pic.imgdb.cn/item/66373a8e0ea9cb1403ac65ec.jpg" class="rounded small-img">
+          </div>
+          <div class="col-8">
+            <a class="-voice-title body-link text-decoration-none" href="voice.html"></a>
+            <br>
+            <span class="text-body-tertiary" style="font-size: 14px;">
+              <i class="bi bi-person-circle"></i>
+              <span class="-john-zhang"></span>
+              <br>
+              <i class="bi bi-calendar-fill"></i>&ensp;2022/11
+            </span>
+          </div>
+        </div>
+        <div class="row gx-3 mb-3">
+          <div class="col-4">
+            <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.Uul-EqvhOLrKppSEbA8XvwAAAA?w=80&h=80&c=7&r=0&o=5&pid=1.7"
+              class="rounded small-img">
+          </div>
+          <div class="col-8">
+            <a class="-star-title body-link text-decoration-none" href="star.html"></a>
+            <br>
+            <span class="text-body-tertiary" style="font-size: 14px;">
+              <i class="bi bi-person-circle"></i>
+              <span class="-john-zhang"></span>
+              <br>
+              <i class="bi bi-calendar-fill"></i>&ensp;2022/11
+            </span>
+          </div>
+        </div>
+        <div class="row gx-3 mb-3">
+          <div class="col-4">
+            <img src="https://pic.imgdb.cn/item/66372c210ea9cb1403872d40.jpg" class="rounded small-img">
+          </div>
+          <div class="col-8">
+            <a class="-spring-title body-link text-decoration-none" href="spring.html"></a>
+            <br>
+            <span class="text-body-tertiary" style="font-size: 14px;">
+              <i class="bi bi-person-circle"></i>
+              <span class="-john-zhang"></span>
+              <br>
+              <i class="bi bi-calendar-fill"></i>&ensp;2024/4/6
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <!--不要忘记更换这里的路径！-->
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/js.cookie.min.js"></script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/components.js"></script>
+  <script>
+    function otherChineseText() {
+      ci('.-text', `
+      <h3>起因</h3>
+    <p>这几日闲来无事，把之前老掉牙的网站翻修一下。</p>
+    <p>其实我想重建网站的念头并不是突然冒出来的。在5月份的时候，我注意到好友<a class="link" href="https://commongoldingot.github.io"
+        target="_blank">Rabbit</a>的网站已焕然一新，远超出我的想象（之前我还在自己的网页里吐槽过）。于是我和他吃饭的时候谈起这件事情来，做出承诺，暑假的时候要重建我的网站。</p>
+    <p>现在暑假已到，该是履行承诺的时候了。</p>
+
+    <h3>工欲善其事，必先利其器</h3>
+    <p>之前我一直使用 Windows 操作系统编写网站，虽说没有什么不对，但是运行速度慢一点，安装软件麻烦一点，配置环境麻烦一点……这些“一点”逼迫着我离开这个操作系统。对不起，微软，我最终还是选择了
+      GNU/Linux。至于发行版，我选择了 Linux Mint，基于强大的 Ubuntu 却又没有 snap 和广告的骚扰，运行速度也是杠杠的。</p>
+    <p>不过微软也不用太伤心，毕竟编辑器还是 Visual Studio Code，从我开始编程的第一天就在用，实在顺手得很。</p>
+
+    <h3>轮子选得好，不用自己造</h3>
+    <p>看到 Rabbit 跟我炫耀他的网站有多么大，CSS有多么长，我便嗤之以鼻。现在网上现成的 CSS、JS 框架那么多，何必自己造轮子呢？选择自己觉得方便、顺手的一款就行了。于是，我选择了 <a class="link"
+        href="https://getbootstrap.com">Bootstrap</a>。</p>
+    <p>我本来是想用 Tailwind CSS 的，然而大家对比一下下面这两段代码就知道我为什么不用它了。</p>
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <p class="text-danger">Tailwind CSS</p>
+        <p><code>
+                    &lt;button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"&gt;Button&lt;/button&gt;
+                </code></p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <p class="text-success">Bootstrap</p>
+        <p><code>
+                    &lt;button class="btn btn-primary"&gt;Button&lt;/button&gt;
+                </code></p>
+      </div>
+    </div>
+
+    <h3>开始编写</h3>
+    <p>准备工作完成，接下来就该编写网站了。这个过程比较枯燥：编辑器里写一点，<kbd>Ctrl</kbd> + <kbd>S</kbd> 一下，然后再切换到浏览器，<kbd>F5</kbd> 一下……最后就写好了（其实还没有写好）。
+    </p>`)
+    }
+    function otherEnglishText() {
+      ci('.-text', `<h3>Reason</h3>
+    <p>I'm free these days so am rebuilding the old website.</p>
+    <p>In fact, the idea of rebulding it was not thought up suddenly these days. I noticed that my close friend <a class="link" href="https://commongoldingot.github.io"
+        target="_blank">Rabbit</a>'s website is all new which was more than I ever imagined (I redeculed it in my website in the past). So I talked about it to him at dinner time and promised to rebuild my website in the summer holidays.</p>
+    <p>Now it's summer holidays, time to fulfill my promise.</p>
+    <h3>工欲善其事，必先利其器</h3>
+    <p>之前我一直使用 Windows 操作系统编写网站，虽说没有什么不对，但是运行速度慢一点，安装软件麻烦一点，配置环境麻烦一点……这些“一点”逼迫着我离开这个操作系统。对不起，微软，我最终还是选择了
+      GNU/Linux。至于发行版，我选择了 Linux Mint，基于强大的 Ubuntu 却又没有 snap 和广告的骚扰，运行速度也是杠杠的。</p>
+    <p>不过微软也不用太伤心，毕竟编辑器还是 Visual Studio Code，从我开始编程的第一天就在用，实在顺手得很。</p>
+
+    <h3>轮子选得好，不用自己造</h3>
+    <p>看到 Rabbit 跟我炫耀他的网站有多么大，CSS有多么长，我便嗤之以鼻。现在网上现成的 CSS、JS 框架那么多，何必自己造轮子呢？选择自己觉得方便、顺手的一款就行了。于是，我选择了 <a class="link"
+        href="https://getbootstrap.com">Bootstrap</a>。</p>
+    <p>我本来是想用 Tailwind CSS 的，然而大家对比一下下面这两段代码就知道我为什么不用它了。</p>
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <p class="text-danger">Tailwind CSS</p>
+        <p><code>
+                    &lt;button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"&gt;Button&lt;/button&gt;
+                </code></p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <p class="text-success">Bootstrap</p>
+        <p><code>
+                    &lt;button class="btn btn-primary"&gt;Button&lt;/button&gt;
+                </code></p>
+      </div>
+    </div>
+
+    <h3>开始编写</h3>
+    <p>准备工作完成，接下来就该编写网站了。这个过程比较枯燥：编辑器里写一点，<kbd>Ctrl</kbd> + <kbd>S</kbd> 一下，然后再切换到浏览器，<kbd>F5</kbd> 一下……最后就写好了（其实还没有写好）。
+    </p>`)
+    }
+  </script>
+  <script src="scripts/language.js"></script>
+  <script src="scripts/theme.js"></script>
+  <script src="scripts/clipboard.min.js"></script>
+</body>
+
+</html>
