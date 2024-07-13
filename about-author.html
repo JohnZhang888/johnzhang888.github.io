@@ -10,7 +10,7 @@
   <!--不要忘记更换这里的路径！-->
   <link href="styles/main.css" rel="stylesheet">
   <link href="styles/bootstrap-icons.min.css" rel="stylesheet">
-  <title class="-rebuild-title"></title>
+  <title class="-about-author"></title>
   <link rel="shortcut icon" type="image/x-icon" href=“logo/shortcut.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC">
 
@@ -21,13 +21,29 @@
   <div id="Navbar"></div>
   <div class="container">
     <br>
-    <h2 class="-about-title"></h2>
-    <ul>
-      <li><a class="link -about-website" href="about-website.html">关于网站</a></li>
-      <li><a class="link -about-author" href="about-author.html">关于作者</a></li>
-      <li><a class="link -licenses" href="licenses.html">协议</a></li>
-      <!--<li><a class="link" href="../404.html">鸣谢</a></li>-->
-    </ul>
+    <div class="row gx-4 gy-4">
+      <div class="col-12 col-md-8">
+        <a href="about.html" class="-about-title link text-decoration-none"></a>&ensp;
+        <h2 class="-about-author mt-2"></h2>
+        <p class="text-body-tertiary">
+          <i class="bi bi-person-circle"></i>
+          <span class="-john-zhang"></span>
+          &emsp;
+          <i class="bi bi-calendar-fill"></i>&ensp;2024/7/13
+        </p>
+        <div class="-text">
+        </div>
+
+      </div>
+      <div class="col-12 col-md-4 mb-4">
+        <h4 class="-recommend mb-3"></h4>
+        <ul>
+          <li><a class="link -about-website" href="about-website.html">关于作者</a></li>
+          <li><a class="link -licenses" href="licenses.html">协议</a></li>
+        </ul>
+      </div>
+    </div>
+    <br>
   </div>
   <script src="scripts/bootstrap.bundle.min.js"></script>
   <script src="scripts/js.cookie.min.js"></script>
@@ -35,10 +51,16 @@
   <script src="scripts/components.js"></script>
   <script>
     function otherChineseText() {
-
+      ci('.-text', `
+    <p>本网站的作者是张永康。等我有时间了好好地写一写自我介绍。</p>
+    
+    `)
     }
     function otherEnglishText() {
-
+      ci('.-text', `
+      <p>The author of the website is John Zhang. Please wait me to make a new self-insduction when I'm free.
+    
+    `)
     }
   </script>
   <script src="scripts/language.js"></script>

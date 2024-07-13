@@ -49,7 +49,9 @@ function toChinese() {
   ci('.-technology', '科技')
   ci('.-rate', '评价')
   ci('.-essays-description', '随便写点东西，什么都写。')
-  
+  ci('.-about-author', '关于作者')
+  ci('.-about-website', '关于网站')
+  ci('.-licenses', '许可证')  
   $('.No-english').hide();
   
   otherChineseText()
@@ -96,7 +98,9 @@ function toEnglish() {
   ci('.-technology', 'Technology')
   ci('.-rate', 'Rate')
   ci('.-essays-description', 'Write anything I like.')
-  
+  ci('.-about-author', 'About the Author')
+  ci('.-about-website', 'About the Website')
+  ci('.-licenses', 'Licenses')
   $('.No-english').show();
   
   otherEnglishText()

@@ -18,7 +18,7 @@ document.querySelector('#Navbar').innerHTML = `<nav class="navbar navbar-expand-
         <a class="nav-link text-body -tag-title" href="tools-and-games.html"></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-body -about-title" href="johnzhang888.github.io/about.html"></a>
+        <a class="nav-link text-body -about-title" href="about.html"></a>
       </li>
     </ul>
     <form class="d-flex" style="list-style-type: none">

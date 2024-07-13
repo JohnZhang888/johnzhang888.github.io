@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN" data-bs-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link href="styles/bootstrap.min.css" rel="stylesheet">
+  <!--不要忘记更换这里的路径！-->
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/bootstrap-icons.min.css" rel="stylesheet">
+  <title class="-licenses"></title>
+  <link rel="shortcut icon" type="image/x-icon" href=“logo/shortcut.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC">
+
+
+</head>
+
+<body>
+  <div id="Navbar"></div>
+  <div class="container">
+    <br>
+    <div class="row gx-4 gy-4">
+      <div class="col-12 col-md-8">
+        <a href="about.html" class="-about-title link text-decoration-none"></a>&ensp;
+        <h2 class="-licenses mt-2"></h2>
+        <p class="text-body-tertiary">
+          <i class="bi bi-person-circle"></i>
+          <span class="-john-zhang"></span>
+          &emsp;
+          <i class="bi bi-calendar-fill"></i>&ensp;2024/7/13
+        </p>
+        <div class="No-english alert alert-info" role="alert">
+          <i class="bi bi-translate"></i>
+          &ensp;Most of the passage was translated to English by <a class="alert-link"
+            href="https://fanyi.baidu.com">Baidu Translator</a>.
+        </div>
+        <div class="-text">
+        </div>
+
+      </div>
+      <div class="col-12 col-md-4 mb-4">
+        <h4 class="-recommend mb-3"></h4>
+        <ul>
+          <li><a class="link -about-author" href="about-author.html">关于作者</a></li>
+          <li><a class="link -about-website" href="about-website.html">协议</a></li>
+        </ul>
+      </div>
+    </div>
+    <br>
+  </div>
+  </body>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/js.cookie.min.js"></script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/components.js"></script>
+  <script>
+    function otherChineseText() {
+      ci('.-text', `
+      <p>我欢迎任何人阅读、修改、转发本网站的内容。但是，你需要遵守一些许可证（也被称为“协议”），来保证本网站的内容不会被非法侵占或胡乱使用。以下是许可证的粗略内容，详细内容请点击相应按钮查询。</p>
+    
+    <h3>代码协议：GNU 公共通用许可证，版本 3.0 或以上。</h3>
+    <p>本网站的所有代码，包括在浏览器中按下 <kbr>F12</kbr> 出现的代码、使用 git clone 获取到的代码等，都遵循 GPL v3+ 协议。主要内容如下：</p>
+    <ul>
+      <li><b>可自由复制：</b>你可以将软件复制到你的电脑，你客户的电脑，或者任何地方。复制份数没有任何限制。</li>
+      <li><b>可自由分发：</b>在你的网站提供下载，拷贝到U盘送人，或者将源代码打印出来从窗户扔出去（环保起见，请别这样做；从法律的角度来讲，请别这样做，因为这属于高空抛物。）。</li>
+      <li><b>可以用来盈利：</b>你可以在分发软件时候收费，但你必须在收费前向你的客户提供该软件的 GNU GPL 许可协议，以便让他们知道，他们可以从别的渠道免费得到这份软件，以及你收费的理由。</li>
+      <li><b>可自由修改：</b>如果你想添加或删除某个功能，没问题，如果你想在别的项目中使用部分代码，也没问题，唯一的要求是，使用了这段代码的项目也必须使用 GPL 协议。</li>
+    </ul>
+    <p><a class="btn btn-outline-primary" href="LICENSE">阅读完整许可证</a></p>
+    <br />
+    <h3>文本协议：知识共享版权归属、相同方式共享 4.0 国际公共许可证</h3>
+    <p>本许可证名称很长，简称 CC BY-SA 4.0（还是很长）。</p>
+    <p>根据本许可证，您可以自由地：</p>
+    <ul>
+      <li><b>共享</b> — 通过任何媒介和任何形式复制、转载本作品。</li>
+      <li><b>改编</b> — 在任意用途下合成、转换和改造本作品，甚至是商业性的。</li>
+    </ul>
+    <p>只要您遵循许可证条款，版权方就不能收回您的这些权利。依据下列条款：</p>
+    <ul>
+      <li><b>注明版权归属</b> — 您必须附上原始作品的来源及本许可证的链接，同时说明是否修改了原始作品。您可以用任何合理的方式来注明原始作品的版权归属，但是不得以任何方式表明版权方认可您或您的使用。</li>
+      <li><b>相同方式共享</b> — 若您改编了原始作品，则您必须使用和原始作品相同的许可证来分发您的衍生作品。</li>
+      <li><b>不得附加限制</b> — 您不得使用任何法律条款或技术措施，在法律上限制别人做许可证准许的任何事情。</li>
+    </ul>
+    <p>上文中，“本作品”指本网站的所有文本，即可以在浏览器中直接复制到的文本。</p>
+    <p><a class="btn btn-outline-primary" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">阅读完整许可证</a>
+    </p>
+    
+    `)
+    }
+    function otherEnglishText() {
+      ci('.-text', `
+      <p>I welcome anyone to read, modify, and forward the content of this website. However, you need to comply with some licenses (also known as "agreements") to ensure that the content of this website will not be illegally appropriated or used indiscriminately. The following is the rough content of the license. For detailed information, please click the corresponding button to search</ p>  
+<h3>Code Agreement: GNU General Public License, version 3.0 or above</h3> 
+<p>All code on this website, including code that appears when pressing<kbr>F12</kbr>in the browser, code obtained using git clone, etc., complies with the GPL v3+license. The main content is as follows:</p> 
+<ul> 
+<li><b>Free copying: </b>You can copy the software to your computer, your client's computer, or anywhere else. There is no limit on the number of copies to be copied</ li> 
+<li><b>Free distribution: </b>Provide downloads on your website, copy to a USB drive and send to others, or print out the source code and throw it out of the window (for environmental reasons, please do not do this; from a legal perspective, please do not do this, as it is considered high-altitude throwing)</ li> 
+<li><b>Can be used for profit: </b>You can charge when distributing software, but you must provide your customers with the GNU GPL license of the software before charging, so that they know that they can get the software for free from other sources and the reason for your fee</ li> 
+<li><b>Free to modify: </b>If you want to add or remove a certain feature, no problem. If you want to use some code in other projects, no problem. The only requirement is that the project that uses this code must also use the GPL license</ li> 
+</ul> 
+<p><a class="btn btn-outline-primary" ref="LICENSE">Read the complete license</a></p> 
+<br> 
+<h3>Text Protocol: Copyright Ownership for Knowledge Sharing, ShareAlike 4.0 International Public License</h3> 
+<p>The name of this license is very long, abbreviated as CC BY-SA 4.0 (which is still quite long)</ p> 
+<p>According to this license, you are free to:</p>
+<ul> 
+<li><b>Share</b> - Copy and reproduce this work through any medium and in any form</ li> 
+<li><b>Adaptation</b> - Synthesize, transform, and modify this work for any purpose, even for commercial purposes</ li> 
+</ul> 
+<p>As long as you comply with the license terms, the copyright owner cannot reclaim these rights from you. According to the following terms:</p> 
+<ul> 
+<li><b>Indicate copyright ownership</b> - You must attach the source of the original work and the link to this license, and indicate whether the original work has been modified. You may indicate the copyright ownership of the original work in any reasonable way, but you may not indicate in any way that the copyright owner recognizes you or your use</ li> 
+<li><b>Sharing in the same way</b> - If you have adapted the original work, you must use the same license as the original work to distribute your derivative works</ li> 
+<li><b>No Additional Restrictions</b> - You are not allowed to use any legal terms or technical measures that legally restrict others from doing anything permitted by the license</ li> 
+</ul> 
+<p>In the previous text, "this work" refers to all the text on this website, which can be directly copied in the browser.</ p> 
+<p><a class="btn btn-outline-primary" href=" https://creativecommons.org/licenses/by-sa/4.0/legalcode"> Read the complete license</a> 
+</p> 
+
+
+    
+    `)
+    }
+  </script>
+  <script src="scripts/language.js"></script>
+  <script src="scripts/theme.js"></script>
+</body>
+
+</html>

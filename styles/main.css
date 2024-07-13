@@ -235,6 +235,7 @@
 .carousel-image {
   height: 400px;
   object-fit: cover;
+  filter: brightness(0.5);
 }
 
 .small-img {
@@ -273,4 +274,22 @@
 
 * {
   font-family: 'Noto Sans', 'Noto Sans SC', sans-serif;
+}
+
+.btn-glass {
+  background-color: rgba(209, 250, 229, 0.8);
+  color: #000;
+  backdrop-filter: blur(10px);
+}
+.btn-glass:hover {
+  background-color: rgba(209, 250, 229, 0.9);
+  color: #000;
+}
+.btn-glass:active {
+  background-color: rgba(209, 250, 229, 0.7) !important;
+  color: #000 !important;
+}
+
+.link {
+  text-decoration: none;
 }

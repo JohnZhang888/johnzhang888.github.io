@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN" data-bs-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link href="styles/bootstrap.min.css" rel="stylesheet">
+  <!--不要忘记更换这里的路径！-->
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/bootstrap-icons.min.css" rel="stylesheet">
+  <title class="-about-website"></title>
+  <link rel="shortcut icon" type="image/x-icon" href=“logo/shortcut.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC">
+
+
+</head>
+
+<body>
+  <div id="Navbar"></div>
+  <div class="container">
+    <br>
+    <div class="row gx-4 gy-4">
+      <div class="col-12 col-md-8">
+        <a href="about.html" class="-about-title link text-decoration-none"></a>&ensp;
+        <h2 class="-about-website mt-2"></h2>
+        <p class="text-body-tertiary">
+          <i class="bi bi-person-circle"></i>
+          <span class="-john-zhang"></span>
+          &emsp;
+          <i class="bi bi-calendar-fill"></i>&ensp;2024/7/13
+        </p>
+        <div class="No-english alert alert-info" role="alert">
+          <i class="bi bi-translate"></i>
+          &ensp;Most of the passage was translated to English by <a class="alert-link"
+            href="https://fanyi.baidu.com">Baidu Translator</a>.
+        </div>
+        <div class="-text">
+        </div>
+
+      </div>
+      <div class="col-12 col-md-4 mb-4">
+        <h4 class="-recommend mb-3"></h4>
+        <ul>
+          <li><a class="link -about-author" href="about-author.html">关于作者</a></li>
+          <li><a class="link -licenses" href="licenses.html">协议</a></li>
+        </ul>
+      </div>
+    </div>
+    <br>
+  </div>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/js.cookie.min.js"></script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/components.js"></script>
+  <script>
+    function otherChineseText() {
+      ci('.-text', `
+    <p>本网站初建于 2022 年 11 月，最初为偶然发现 Github Pages 这一服务而尝试建设，没想到一发不可收拾，最终建设为一个完整的网站。</p>
+    <p>2023 年 7 月，为了加快访问速度，优化 UI 界面使其更加清爽，我重新构建了本网站，具体请见<a href="../kind1/rebuildWebsite.html" class="link">网站重建记</a>。
+    </p>
+    <p>2024 年 5 月至 7 月，我再次从头构建网站，形成了现在的版本。</p>
+    
+    `)
+    }
+    function otherEnglishText() {
+      ci('.-text', `
+      <p>This website was first built in November 2022, initially as an attempt to discover the Github Pages service by chance. Unexpectedly, it went viral and eventually became a complete website</ p> 
+<p>In July 2023, in order to speed up access and optimize the UI interface to make it more refreshing, I rebuilt this website. For details, please refer to the website reconstruction note. 
+</p> 
+<p>From May to July 2024, I built the website from scratch again, forming the current version.</p>
+    
+    `)
+    }
+  </script>
+  <script src="scripts/language.js"></script>
+  <script src="scripts/theme.js"></script>
+</body>
+
+</html>
