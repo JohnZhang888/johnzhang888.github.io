@@ -272,9 +272,14 @@
   text-decoration: none;
 }
 
-* {
-  font-family: 'Noto Sans', 'Noto Sans SC', sans-serif;
+@font-face {
+  font-family: 'Cantarell';
+  src: url('Cantarell-VF.otf');
 }
+* {
+  font-family: 'Cantarell', 'Noto Sans SC', sans-serif;
+}
+
 
 .btn-glass {
   background-color: rgba(209, 250, 229, 0.8);

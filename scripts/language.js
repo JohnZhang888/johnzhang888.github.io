@@ -1,4 +1,5 @@
 const copyButton = document.querySelector('.copy-button')
+let paragraphs
 
 function ci(className, innerHTML) {
   const classToChange = document.querySelectorAll(className)
@@ -55,10 +56,14 @@ function toChinese() {
   $('.No-english').hide();
   
   otherChineseText()
+  paragraphs = document.querySelectorAll('p')
+  for (i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].style.fontSize = '16px'
+  }
 }
 
 function toEnglish() {
-  document.querySelector('html').lang = 'en-US'
+  document.querySelector('html').lang = 'en-US'  
   ci('.-john-zhang', 'John Zhang')
   ci('.-example-title', 'Example Title')
   ci('.-example-description', 'Example description.')
@@ -104,6 +109,11 @@ function toEnglish() {
   $('.No-english').show();
   
   otherEnglishText()
+  paragraphs = document.querySelectorAll('p')
+  for (i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].style.fontSize = '17px'
+  } 
+
 }
 
 switch (Cookies.get('language')) {
