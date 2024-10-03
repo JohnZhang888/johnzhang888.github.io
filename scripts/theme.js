@@ -16,11 +16,11 @@ function changeClass(a, b, c) {
 
 function lightStyle() {
   html.setAttribute('data-bs-theme', 'light')
-  logo.src = 'https://pic.imgdb.cn/item/666d0599d9c307b7e948a4ca.png'
+  logo.src = 'images/logo-light.svg'
 } //亮色样式
 function darkStyle() {
   html.setAttribute('data-bs-theme', 'dark')
-  logo.src = 'https://pic.imgdb.cn/item/6676d964d9c307b7e9048a8c.png'
+  logo.src = 'images/logo-dark.svg'
 } //暗色样式
 
 function lightTheme() {
