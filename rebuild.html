@@ -12,7 +12,7 @@
   <link href="styles/bootstrap-icons.min.css" rel="stylesheet">
   <title class="-rebuild-title"></title>
   <link rel="shortcut icon" type="image/x-icon" href=“logo/shortcut.png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Noto+Sans+SC">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC">
 
 
 </head>
@@ -36,6 +36,10 @@
           <i class="bi bi-translate"></i>
           &ensp;Most of the passage was translated to English by <a class="alert-link"
             href="https://fanyi.baidu.com">Baidu Translator</a>.
+        </div>
+        <div class="alert alert-info" role="alert">
+          <i class="bi bi-info-circle-fill"></i>&ensp;
+          <span class="-out-dated"></span>
         </div>
         <div class="-text">
         </div>
@@ -101,6 +105,7 @@
   <script src="scripts/components.js"></script>
   <script>
     function otherChineseText() {
+      ci('.-out-dated', '本文描述的内容已过时。文中提到的新版本网站指 v2 版本，而非现在的 v3 版本。')
       ci('.-text', `
       <h3>起因</h3>
     <p>这几日闲来无事，把之前老掉牙的网站翻修一下。</p>
@@ -137,6 +142,7 @@
     </p>`)
     }
     function otherEnglishText() {
+      ci('.-out-dated', 'What is mentioned in the article has been out-dated. The new version mentioned refers to the v2, but not the present v3.')
       ci('.-text', `<h3>Reason</h3>
     <p>I'm free these days so am rebuilding the old website.</p>
     <p>In fact, the idea of rebulding it was not thought up suddenly these days. I noticed that my close friend <a class="link" href="https://commongoldingot.github.io"

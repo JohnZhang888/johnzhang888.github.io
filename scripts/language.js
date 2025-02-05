@@ -52,7 +52,9 @@ function toChinese() {
   ci('.-essays-description', '随便写点东西，什么都写。')
   ci('.-about-author', '关于作者')
   ci('.-about-website', '关于网站')
-  ci('.-licenses', '许可证')  
+  ci('.-licenses', '许可证')
+  ci('.-puzzles-description', '一个考验智力和搜索能力的网页解谜游戏。')  
+  ci('.-play', '游玩')
   $('.No-english').hide();
   
   otherChineseText()
@@ -106,6 +108,8 @@ function toEnglish() {
   ci('.-about-author', 'About the Author')
   ci('.-about-website', 'About the Website')
   ci('.-licenses', 'Licenses')
+  ci('.-puzzles-description', 'A website puzzle game that tests your IQ and searching ability.')  
+  ci('.-play', 'Play')
   $('.No-english').show();
   
   otherEnglishText()
