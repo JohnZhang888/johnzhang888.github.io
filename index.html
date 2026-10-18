@@ -19,6 +19,11 @@
 
 <body>
   <div id="Navbar"></div>
+  <div class="container">
+    <div class="alert alert-info mt-3" role="alert">
+      <span class="-new-version-alert"></span><a href="https://jz8.de5.net/" class="link -new-homepage-link"></a><span class="-period"></span>
+    </div>
+  </div>
   <div id="carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -184,10 +189,16 @@
     function otherChineseText() {
       ci('title', 'John Zhang 的网站')
       ci('.-too-ugly', '这破主页太丑、太抽象了，等我有时间一定做个新的！')
+      ci('.-new-version-alert', '本网站已停止维护，请移步至')
+      ci('.-new-homepage-link', '新主页')
+      ci('.-period', '。')
     }
     function otherEnglishText() {
       ci('title', 'John Zhang\'s Website')
       ci('.-too-ugly', 'The sh*t homepage is too ugly and abtract! Wait me to make a new one as sonn as I\'m free!')
+      ci('.-new-version-alert', 'This website is no longer maintained. Please visit the')
+      ci('.-new-homepage-link', 'new homepage')
+      ci('.-period', '.')
     }
   </script>
   <script src="scripts/language.js"></script>
